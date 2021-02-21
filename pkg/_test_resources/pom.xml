@@ -37,9 +37,9 @@
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
         <!-- These remain empty unless the corresponding profile is active -->
-        <profile.no-liquibase />
-        <profile.swagger />
-        <profile.tls />
+        <profile.no-liquibase/>
+        <profile.swagger/>
+        <profile.tls/>
 
         <!-- Dependency versions -->
         <jhipster-dependencies.version>3.0.5</jhipster-dependencies.version>
@@ -66,7 +66,7 @@
         <jaxb-runtime.version>2.3.2</jaxb-runtime.version>
         <mapstruct.version>1.3.0.Final</mapstruct.version>
         <caffeine.version>2.8.0</caffeine.version>
-        <jcache.version>2.8.0</jcache.version>
+        <jcache.version>2.8.8</jcache.version>
         <typesafe.version>1.3.4</typesafe.version>
         <!-- Plugin versions -->
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
@@ -642,9 +642,9 @@
                         <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                         <driver>org.h2.Driver</driver>
                         <url>jdbc:h2:file:${project.build.directory}/h2db/db/mybundle</url>
-                        <defaultSchemaName></defaultSchemaName>
+                        <defaultSchemaName/>
                         <username>myBundle</username>
-                        <password></password>
+                        <password/>
                         <referenceUrl>hibernate:spring:com.mycompany.myapp.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                         <verbose>true</verbose>
                         <logging>debug</logging>
@@ -727,7 +727,7 @@
                             <id>enforce-dependencyConvergence</id>
                             <configuration>
                                 <rules>
-                                    <DependencyConvergence />
+                                    <DependencyConvergence/>
                                 </rules>
                                 <fail>false</fail>
                             </configuration>
